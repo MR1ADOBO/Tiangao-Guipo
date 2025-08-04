@@ -1,0 +1,80 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF‑8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csslogin.css" >
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+          <div class="container">
+          <h2>Login Collaboration</h2>
+          <p>Please fill up this form with required infrormation</p>
+
+        <form onsubmit="return validateForm();" method="post" action="Login.php">
+
+            <div class="input-box">
+            <label for="username">Username</label>
+            <input id="username" placeholder="ENTER YOUR USERNAME" required />
+            </div>
+
+            <div class="input-box">
+          <label for="user-detail">Fullname</label>
+          <input type="text" placeholder="ENTER YOUR FULL NAME" required/>
+            </div>
+
+            <div  class="input-box">
+            <label for="user-detail">Email</label>
+            <input id="email" placeholder="ENTER YOUR EMAIL" required />
+            </div>
+
+            <div  class="input-box">
+            <label for="user-detail">Create Password</label>
+            <input id="password" placeholder="ENTER YOUR PASSWORD" required />
+              </div>
+
+<div style="border-bottom: 1px solid #000000; margin: 20px 0;"></div>
+
+              <div class="info-detail"> 
+              <input type="radio" required/>
+              <label for="info1">Program</label><br></br>
+              <input type="radio" required/>
+              <label for="info1">Year Level</label><br></br>
+              <input type="checkbox"required>
+              <label for="info1">I accept the <u>Terms and Conditions</u> </label><br></br>
+                </div>
+
+                <p>The school ensure data protection by adhering to relevant privacy laws,applying encryption, and requiring consent before any enternal sharing.</p>
+
+<div style="border-bottom: 1px solid #000000; margin: 20px 0;"></div>
+
+                <div class="input-box1">
+                  <label type ="Upload a profile picture:">Upload a profile picture:</label>
+        <input class="bgc" type="file" id="myfile" required><br></br>
+
+               <label for="input-box1">Birthdate</label>
+               <input type="date" id="date">
+
+               <label for="input-box1">Specialization?</label>
+                <select name="Select">
+                <option value="JAVA">JAVA</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                <option value="[select one]" selected="[select one]">[select one]</option>
+                  </div>
+
+                  <div class="Bio">
+                  <label for="Bio">Bio:</label>
+                  <input type="text"  placeholder="I like coding on the beach......" required>
+                    </div>
+
+                 <div class="submit-button">
+                <button type="submit" >Submit</button>
+                </div>
+
+          </div>
+                    </div>
+        </form>
+  </body>
+  </html>
