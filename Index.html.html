@@ -1,80 +1,76 @@
   <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF‑8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="csslogin.css" >
-    <title>Registration Form</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <link rel="stylesheet" href="csslogin.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <p>Please fill up this form with required information</p>
 
-  <body>
-          <div class="container">
-          <h2>Login Collaboration</h2>
-          <p>Please fill up this form with required infrormation</p>
+    <form onsubmit="return validateForm();" method="post" action="login.ph"> 
+     
+      <div class="input-box">
+        <label>Username</label>
+        <input type="text" placeholder="ENTER YOUR USERNAME" required>
+        <label>Full Name</label>
+        <input type="text" placeholder=" YOUR FULL NAME" required>
+        <label for="email">Email</label>
+        <input type="email" placeholder="ENTER YOUR EMAIL" required>
+        <label>Create Password</label>
+        <input type="password" placeholder="ENTER YOUR PASSWORD" required>
+      </div>
 
-        <form onsubmit="return validateForm();" method="post" action="Login.php">
-
-            <div class="input-box">
-            <label for="username">Username</label>
-            <input id="username" placeholder="ENTER YOUR USERNAME" required />
-            </div>
-
-            <div class="input-box">
-          <label for="user-detail">Fullname</label>
-          <input type="text" placeholder="ENTER YOUR FULL NAME" required/>
-            </div>
-
-            <div  class="input-box">
-            <label for="user-detail">Email</label>
-            <input id="email" placeholder="ENTER YOUR EMAIL" required />
-            </div>
-
-            <div  class="input-box">
-            <label for="user-detail">Create Password</label>
-            <input id="password" placeholder="ENTER YOUR PASSWORD" required />
-              </div>
+     
 
 <div style="border-bottom: 1px solid #000000; margin: 20px 0;"></div>
 
-              <div class="info-detail"> 
-              <input type="radio" required/>
-              <label for="info1">Program</label><br></br>
-              <input type="radio" required/>
-              <label for="info1">Year Level</label><br></br>
-              <input type="checkbox"required>
-              <label for="info1">I accept the <u>Terms and Conditions</u> </label><br></br>
-                </div>
+ <div class="input-box1">
 
-                <p>The school ensure data protection by adhering to relevant privacy laws,applying encryption, and requiring consent before any enternal sharing.</p>
+      <div class="label">
+             <label >Status</label>
+        <input  type="radio" required>
+             <label >Program</label>
+        <input type="radio"  required>
+             <label >Year Level</label>
+        <input type="checkbox" required>
+             <label >I accept the <u>Terms and Conditions</u></label></div>
+      </div>
+    
+      <p>The school ensures data protection by adhering to relevant privacy laws, applying encryption, and requiring consent before any external sharing.</p>
+
 
 <div style="border-bottom: 1px solid #000000; margin: 20px 0;"></div>
+ 
+      <div class="input-box">
+        <label>Upload a profile picture</label>
+        <input id="profilePic" name="profilePic" type="file" accept="image/*" required>
+        <label for="birthdate">Birthdate</label>
+        <input id="birthdate" name="birthdate" type="date" required>
+        <label>Specialization</label>
+        </div>
+        <div class="select">
+       <select required>
+          <option value="">[SELECT ONE]</option>
+          <option value="JAVA">JAVA</option>
+          <option value="PYTHON">PYTHON</option>
+          <option value="JAVASCRIPT">JAVASCRIPT</option>
+        </select>
+      </div>
 
-                <div class="input-box1">
-                  <label type ="Upload a profile picture:">Upload a profile picture:</label>
-        <input class="bgc" type="file" id="myfile" required><br></br>
+      <div class="input-box">
+        <label>Bio:</label>
+        <textarea cols="86" rows="3" id="comment" placeholder="I like coding"></textarea>
+      </div>
 
-               <label for="input-box1">Birthdate</label>
-               <input type="date" id="date">
-
-               <label for="input-box1">Specialization?</label>
-                <select name="Select">
-                <option value="JAVA">JAVA</option>
-                <option value="PYTHON">PYTHON</option>
-                <option value="JAVASCRIPT">JAVASCRIPT</option>
-                <option value="[select one]" selected="[select one]">[select one]</option>
-                  </div>
-
-                  <div class="Bio">
-                  <label for="Bio">Bio:</label>
-                  <input type="text"  placeholder="I like coding on the beach......" required>
-                    </div>
-
-                 <div class="submit-button">
-                <button type="submit" >Submit</button>
-                </div>
-
-          </div>
-                    </div>
-        </form>
-  </body>
-  </html>
+      <div class="submit-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </script>
+</body>
+</html>
